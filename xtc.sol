@@ -16,9 +16,9 @@ contract XTC{
     constructor () public {
         TotalSupply = 1000000000 * (10 ** Decimals);
         Decimals = 18;
-        name = "XtremeCoin"
-        symbol = "XTC"
-        info = "XtremeCoin is a revolutionary token created for weather insurance"
+        name = "XtremeCoin";
+        symbol = "XTC";
+        info = "XtremeCoin is a revolutionary token created for weather insurance";
     }
 
     // Above is the contract constructor.
@@ -30,11 +30,11 @@ contract XTC{
     }
 
     function BalanceOf(address owner) public view returns(uint256) {
-        return balance[owner]
+        return balance[owner];
     }
     
     function updateinfo(string memory newinfo) {
-        info = newinfo
+        info = newinfo;
     }
 }
 
